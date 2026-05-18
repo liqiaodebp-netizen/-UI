@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>联通沃派 33屏 UI 热点交互 H5</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="stage">
+      <section class="phone" id="phone">
+        <div class="screen-stack" id="screenStack"></div>
+        <div class="hotspot-layer" id="hotspotLayer"></div>
+      </section>
+
+      <aside class="side-notes">
+        <p class="eyebrow">联通沃派 AI 方向系统</p>
+        <h1>33 屏 UI 模拟交互 H5</h1>
+        <p>
+          这套页面使用你整理后的正式页、IP 拓展页和候选页图片，所有跳转都通过 UI
+          画面上的透明热区完成，用来模拟真实产品动线与展示节奏。
+        </p>
+        <p id="screenTitle"></p>
+        <p class="hint">直接点击手机画面中的 CTA、卡片、返回箭头、底部导航区域即可跳转。</p>
+
+        <div class="side-actions">
+          <button class="ghost-btn" id="backBtn" type="button">返回上一页</button>
+          <button class="ghost-btn" id="soundBtn" type="button" aria-pressed="true">音效 开</button>
+          <button class="ghost-btn" id="debugBtn" type="button" aria-pressed="false">显示热点</button>
+        </div>
+
+        <div class="mini-map" id="miniMap"></div>
+      </aside>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
